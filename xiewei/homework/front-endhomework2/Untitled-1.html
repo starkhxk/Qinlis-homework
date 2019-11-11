@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Saro</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-image: url(background-image.jpg);
+            font-size: 100%;
+        }
+        
+        .nav {
+            width: 100%;
+            height: 30px;
+            top: 0;
+            background-color: rgb(16, 16, 24);
+            position: fixed;
+        }
+        
+        .blank1 {
+            height: 30px;
+            top: 0;
+        }
+        
+        .image {
+            width: 50%;
+            height: 220px;
+            float: left;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .link {
+            width: 50%;
+            height: 220px;
+            float: left;
+        }
+        
+        .login {
+            background: #191919;
+            width: 100%;
+            height: 350px;
+            clear: both;
+            text-align: center;
+        }
+        
+        .blank2 {
+            height: 30px;
+            bottom: 0;
+            margin: 0;
+        }
+        
+        .footer {
+            background-color: rgb(32, 19, 219);
+            position: fixed;
+            width: 100%;
+            height: 30px;
+            bottom: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: blueviolet;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 0px 0px 5px rgb(34, 202, 174);
+            clear: both;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        
+        a:hover {
+            color: #9b17c4;
+        }
+        
+        a {
+            text-decoration-line: none;
+        }
+        
+        ul {
+            list-style: none;
+            top: 0px;
+        }
+        
+        li {
+            font-size: 15px;
+            width: 25%;
+            float: left;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #167bda;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .link p:hover {
+            color: #9b17c4;
+        }
+        
+        .link p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #167bda;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            margin: 15px;
+        }
+        
+        .login-h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .footer p {
+            text-align: center;
+            font-size: 10px;
+        }
+        
+        .slider,
+        .slider-item {
+            padding-bottom: 40%;
+        }
+        
+        .slider-item {
+            position: absolute;
+            width: 100%;
+            background-size: 100%;
+            animation: fade 20s linear;
+            animation-iteration-count: infinite;
+        }
+        
+        .slider-item1 {
+            background-image: url(loop/1.jpg);
+        }
+        
+        .slider-item2 {
+            background-image: url(loop/2.jpg);
+        }
+        
+        .slider-item3 {
+            background-image: url(loop/3.jpg);
+        }
+        
+        .slider-item4 {
+            background-image: url(loop/4.jpg);
+        }
+        
+        .slider-item5 {
+            background-image: url(loop/5.jpg);
+        }
+        
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            20% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .slider-item {
+            opacity: 0;
+        }
+        
+        .slider-item1 {
+            animation-delay: -1s;
+        }
+        
+        .slider-item2 {
+            animation-delay: 3s;
+        }
+        
+        .slider-item3 {
+            animation-delay: 7s;
+        }
+        
+        .slider-item4 {
+            animation-delay: 11s;
+        }
+        
+        .slider-item5 {
+            animation-delay: 15s;
+        }
+        
+        .focus-container {
+            position: absolute;
+            bottom: 2%;
+            z-index: 7;
+            left: 50%;
+            margin-left: -45px;
+        }
+        
+        .focus-container li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 10px;
+            background: #fff;
+        }
+        
+        .focus-item {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            opacity: 0;
+            background: #51B1D9;
+            border-radius: inherit;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-name: fade;
+            animation-iteration-count: infinite;
+        }
+        
+        .focus-item1 {
+            animation-delay: -1s;
+        }
+        
+        .focus-item2 {
+            animation-delay: 3s;
+        }
+        
+        .focus-item3 {
+            animation-delay: 7s;
+        }
+        
+        .focus-item4 {
+            animation-delay: 11s;
+        }
+        
+        .focus-item5 {
+            animation-delay: 15s;
+        }
+        
+        .login input[type="text"],
+        .login input[type="password"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        
+        .login input[type="text"]:focus,
+        .login input[type="password"]:focus {
+            width: 280px;
+            border-color: #2ecc71;
+        }
+        
+        .login input[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        
+        .login input[type="submit"]:hover {
+            background: #2ecc71;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav" style="list-style: none;">
+        <ul>
+            <li><a href="http://www.ibbox.cn/jiaoxue/">
+               BBOX教学
+            </a></li>
+            <li><a href="http://www.ibbox.cn/biaoyan/">
+                BBOX表演
+            </a></li>
+            <li><a href="http://www.ibbox.cn/shebei/">
+                BBOX设备
+            </a></li>
+            <li><a href="http://www.ibbox.cn/gaoduan/list_5_1.html">
+                高端表演
+            </a></li>
+        </ul>
+    </div>
+    <div class="blank1"></div>
+    <h1>BeatBox</h1>
+    <section class="image">
+        <ul class="slider">
+            <li class="slider-item slider-item1"></li>
+            <li class="slider-item slider-item2"></li>
+            <li class="slider-item slider-item3"></li>
+            <li class="slider-item slider-item4"></li>
+            <li class="slider-item slider-item5"></li>
+        </ul>
+        <div class="focus-container">
+            <ul class="floatfix">
+                <li>
+                    <div class="focus-item focus-item1"></div>
+                </li>
+                <li>
+                    <div class="focus-item focus-item2"></div>
+                </li>
+                <li>
+                    <div class="focus-item focus-item3"></div>
+                </li>
+                <li>
+                    <div class="focus-item focus-item4"></div>
+                </li>
+                <li>
+                    <div class="focus-item focus-item5"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="link">
+        <p><a href="https://www.bilibili.com/video/av9489453?from=search&seid=17706446835342005486">【beatbox】CAMERO vs SARO | Grand Beatbox LOOPSTATION Battle 2017 | 1/4 Final</a><br>
+            <br><a href="https://www.bilibili.com/video/av9531127?from=search&seid=10366414444791268138">【beatbox】MB14 vs SARO | Grand Beatbox LOOPSTATION Battle 2017 | SEMI FINAL</a><br>
+            <br><a href="https://www.bilibili.com/video/av9581497?from=search&seid=10366414444791268138">【beatbox】TIONEB vs SARO | Grand Beatbox LOOPSTATION Battle 2017 | FINAL</a><br>
+            <br><a href="https://www.bilibili.com/video/av30973516?from=search&seid=2719169096284508510">【beatbox】Saro世界赛海选loopstation2018</a><br>
+            <br><a href="https://www.bilibili.com/video/av31861060?from=search&seid=2719169096284508510">NME vs Saro 2018世锦赛设备组半决赛</a><br>
+            <br><a href="https://www.bilibili.com/video/av31860361?from=search&seid=2719169096284508510">Inkie vs Saro 2018世锦赛设备组决赛</a><br>
+        </p>
+
+    </div>
+    <h1>开始学习BeatBox吧！</h1>
+    <div class="login">
+        <form action="index.html" method="POST">
+            <h1 class="login-h1">Login</h1>
+            <input type="text" name="" placeholder="Username" id="username">
+            <input type="password" name="" placeholder="Password" id="password">
+            <input type="submit" name="" value="Login" onclick="check()">
+        </form>
+    </div>
+    <div class="blank2"></div>
+    <div class="footer">
+        <p>Copyright&copy;沈阳理工大学|<a href="malito:1369548156@qq.com;">联系我们</a><br>1903030129谢唯&emsp;制作</p>
+    </div>
+    <script type="text/javascript">
+        function check() {
+            if (document.getElementById("username").value == "") {
+                alert("没有输入用户名！");
+                return false;
+            } else if (document.getElementById("password").value == "") {
+                alert("没有输入密码！");
+                return false;
+            } else {
+                alert("提交成功！")
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>
