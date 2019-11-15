@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image: url("shan.jpg");
+}
+
+div.Nav{
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	background-color: #D1D1D1;
+	position: fixed;
+	top: 0;
+}
+a:hover
+{ 
+	background-color:#2000FF;
+}
+a.Nav{
+	color: #FFFFFF;
+	font-size: 18px;
+	margin-left:10px;
+	margin-right:10px;
+	
+}
+div.Con{
+	max-width: 80%;
+	margin:auto;
+	margin-top: 4%;
+}
+
+div.Con>img{
+	
+	width:500px;
+}
+div.Con>span{
+	text-indent:2em;
+	float:right;
+	width:500px;
+	font-size: 200%;
+	margin-top: 20px;
+}
+div.Cel{
+	margin-top: 5%;
+	text-align: center
+}
+div.Cel>span{
+	color: #CA0003;
+	font-size: 300%;
+	font-weight: bold;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #D50003;
+  font-size: 24px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #D50003;
+  font-size: 24px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #D50003;
+  font-size: 24px;
+}   
+
+input{
+	margin-top: 3%;
+	text-align: center;
+	color: #D50003;
+	font-size: 24px;
+	background-color: transparent;
+	outline-style: none ;
+	border-style: none ;
+	border-bottom-style:solid;
+	border-color: #D10003;
+	text-shadow: none ;
+	width: 30%;
+}
+
+button{
+	margin-top: 3%;
+	font-size: 24px;
+	color: aliceblue;
+	background-color:#D10003;
+	border-style: none ;
+	width: 30%;
+}
+div.cpright{
+	margin-top: 3%;
+	padding: 10px;
+	background: #002BFF;
+	text-align: center;
+	color: aliceblue;
+}
