@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>郝向凯的调查问卷</title>
+    <script type="text/javascript" language="javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script type="text/javascript" src="question.js" ></script>
+</head>
+<style>
+    h1 
+{
+	text-decoration:underline;
+    word-spacing:1000px; 
+    font-family:"Times New Roman",Times,blue serif;
+    color:slategrey;
+}
+.tip
+{
+    border:0px;border-bottom:1px dashed red;
+    text-align:center;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color:rgb(54, 125, 231);
+    position:absolute;
+    left:690px;
+}
+#footer {
+                color:sandybrown;
+                clear:both;
+                text-align:center;
+               padding:60px;	 	 
+            }
+</style>
+
+<body style="BACKGROUND:#B0E0FA">
+
+    <div style="background-color: aliceblue;border-style: dashed;padding-top: 20px;padding-left:100px ;padding-right:100px;padding-bottom:px;margin-top: 30px;margin-right: 300px;margin-left: 300px;margin-bottom: 10px;">
+        <div class="tip">
+            <h1 style="float:center "><b>琴理工作室调查问卷</b></h1>
+            <p><span>您好，这是一份关于web前端的调查问卷，希望能占用你两分钟时间帮忙填一下，非常感谢！</span></p>
+        </div><br><br>
+
+
+        <!-- 单选问题 -->
+
+        <form id="test" onsubmit="return check()">
+            <div class="questionnaire">
+                <div class="question1">
+                    <h3>1.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice1">
+                    <label>
+                        <input type="radio" name="q1" value="A"><span class="aFont">答案此显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question2">
+                    <h3>2.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice2">
+                    <label>
+                        <input type="radio" name="q2" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question3">
+                    <h3>3.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice3">
+                    <label>
+                        <input type="radio" name="q3" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question4">
+                    <h3>4.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice4">
+                    <label>
+                        <input type="radio" name="q4" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question5">
+                    <h3>5.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice5">
+                    <label>
+                        <input type="radio" name="q5" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question6">
+                    <h3>6.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice6">
+                    <label>
+                        <input type="radio" name="q6" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question7">
+                    <h3>7.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice7">
+                    <label>
+                        <input type="radio" name="q7" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <div class="question8">
+                    <h3>8.有关什么什么的问题是？</h3>
+                </div>
+                <div class="choice7">
+                    <label>
+                        <input type="radio" name="q8" value="A"><span class="aFont">答案在次显现</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="B"><span class="bFont">bbbbb</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="C"><span class="cFont">ccccc</span><br>
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="D"><span class="dFont">ddddd</span><br>
+                    </label>
+                </div>
+                <!-- 多选问题 -->
+                <div class="question9">
+                    <h3>9.今天是一周中的哪一天呢？（多选）</h3>
+                </div>
+                <input type="checkbox" name="q9[]" value="A">星期一&nbsp;
+                <input type="checkbox" name="q9[]" value="B">星期二&nbsp;
+                <input type="checkbox" name="q9[]" value="C">星期三&nbsp;
+                <input type="checkbox" name="q9[]" value="D">星期四&nbsp;
+
+                <div class="question9">
+                    <h3>10.今天是一周中的哪一天呢？（多选）</h3>
+                </div>
+                <input type="checkbox" name="q10[]" value="A">星期一&nbsp;
+                <input type="checkbox" name="q10[]" value="B">星期二&nbsp;
+                <input type="checkbox" name="q10[]" value="C">星期三&nbsp;
+                <input type="checkbox" name="q10[]" value="D">星期四&nbsp;
+                <div class="question9">
+                    <div class="question10">
+                        <h3>11.今天是一周中的哪一天呢？（多选）</h3>
+                    </div>
+                </div>
+                <input type="checkbox" name="q11[]" value="A">星期一&nbsp;
+                <input type="checkbox" name="q11[]" value="B">星期二&nbsp;
+                <input type="checkbox" name="q11[]" value="C">星期三&nbsp;
+                <input type="checkbox" name="q11[]" value="D">星期四&nbsp;
+                <div class="question11">
+                    <h3>12.今天是一周中的哪一天呢？（多选）</h3>
+                </div>
+                <input type="checkbox" name="q12[]" value="A">星期一&nbsp;
+                <input type="checkbox" name="q12[]" value="B">星期二&nbsp;
+                <input type="checkbox" name="q12[]" value="C">星期三&nbsp;
+                <input type="checkbox" name="q12[]" value="D">星期四&nbsp;
+                <div class="question12">
+                    <h3>13.今天是一周中的哪一天呢？（多选）</h3>
+                </div>
+                <input type="checkbox" name="q13[]" value="A">星期一&nbsp;
+                <input type="checkbox" name="q13[]" value="B">星期二&nbsp;
+                <input type="checkbox" name="q13[]" value="C">星期三&nbsp;
+                <input type="checkbox" name="q13[]" value="D">星期四&nbsp;
+
+
+                <!-- 简答问题 -->
+                <div class="question13">
+                    <h3>14.请输入您想要填写的简答问题？(选填)</h3>
+                </div>
+                <textarea style="width:600px;height:100px;" name="14"></textarea>
+                <div class="question14">
+                    <h3>15.请输入您想要填写的简答问题？(选填)</h3>
+                </div>
+                <textarea style="width:600px;height:100px;" name="15"></textarea>
+            </div>
+        
+            <br><br><br>
+            <div><input type="submit" class="button" value="提交"></div>
+            <div id="footer">琴理工作室感谢您的支持与帮助！</div>
+
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
