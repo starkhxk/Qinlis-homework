@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+div.back{
+	position: absolute;
+	text-align: left;
+	top:1vh;
+}
+input.number{
+	margin-top:0vh;
+}
+
+br{ 
+	line-height: 0px;
+}
+span.error{
+	color: red;
+	font-size: 5vh;
+}
+div.back>button{
+	color:grey;
+	font-size: 6vw;
+	font-stretch:ultra-condensed;
+	background-color: transparent;
+	border: none;
+}

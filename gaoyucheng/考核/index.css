@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body {
+	text-align: center;
+}
+
+
+div.title{
+	margin-top:10vh;
+}
+
+div.title>span {
+	color: #FFFFFF;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	font-size: 12vw;
+	background-color: #F3A033;
+	border-radius: 2vh;
+}
+
+span.title_zhcn{
+	font-size: 6vw;
+	white-space: nowrap;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+span.title_eng{
+	font-size: 5vw;
+}
+
+div.title>div{
+	width: 25vw;
+	height: 10vh;
+	display:inline-block;
+}
+
+div.in{
+	margin-top:20vh;
+}
+
+div.belly{
+	margin-top: 15vh;
+	font-weight: bold;
+	font-size: 10vw;
+	color: hsla(34,89%,58%,1.00)
+}
+
+input.number{
+	margin-top:5vh;
+	width: 60vw;
+	font-size: 6vw;
+	text-align: center;
+	background-color: hsla(34,89%,58%,0.05);
+	outline-style: none ;
+	border-style:solid;
+	border-width: 0.5vh;
+	border-radius: 1vh;
+	border-color: #F3A033;
+}
+
+div.in>button,form>button{
+	margin-top: 3vh;
+	font-size: 6vw;
+	width: 60vw;
+	background-color: #F3A033;
+	outline-style: none ;
+	border-style:solid;
+	border-width: 0.5vh;
+	border-radius: 1vh;
+	border-color: #F3A033;
+	color:#ffffff;
+}
+#eula{
+	margin-top: 3vh;
+	width: 3vw;
+	height: 3vw;
+}
+div.in>a{
+	color: grey;
+	font-size: 3vw;
+}
