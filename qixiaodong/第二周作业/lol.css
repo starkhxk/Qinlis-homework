@@ -1,0 +1,122 @@
+
+* {
+            margin: 0;
+            padding: 0;
+        }
+.lol {
+            list-style: none;
+            zoom: 1;
+            overflow: hidden;
+            background-color: #b86800;
+            padding: 0 20%;
+            width: 60%;
+            height: auto;
+            position: fixed;
+            opacity: 0.8;
+            z-index: 99;
+        }
+        
+        .lol li {
+            float: left;
+            width: 25%;
+        }
+        
+        .lol a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            text-decoration: none;
+            color: #ffffff;
+            font: bolder 20px "Î¢ÈíÑÅºÚ";
+        }
+        
+        .lol a:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .lolo {
+            background-color: #2a0949;
+            position: relative;
+            top: 1000px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        
+        .lp {
+            position: absolute;
+            top: 350px;
+            left: 200px;
+        }
+        
+        h1 {
+            text-align: center;
+            font: bolder 50px "Î¢ÈíÑÅºÚ";
+            position: absolute;
+            top: 150px;
+            left: 25%;
+            color: rgb(40, 238, 245);
+        }
+        
+        table {
+            border: 2px solid whitesmoke;
+            width: 600px;
+            height: 275px;
+            position: absolute;
+            top: 350px;
+            right: 150px;
+            border-spacing: 0;
+        }
+        
+        th {
+            color: hsl(182, 96%, 68%);
+            font: bolder 20px "ºÚÌå";
+            border: 2px solid whitesmoke;
+        }
+        
+        .lpl {
+            width: 100%;
+            height: 10px;
+            background: #34495e;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+            position: absolute;
+            top: 700px;
+            left: 42.5%;
+        }
+        
+        .contact-form-text {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border: 0;
+            background: rgb(92, 18, 153);
+            padding: 20px 50px;
+            outline: none;
+            color: rgb(189, 181, 196);
+            transition: 0.5s;
+        }
+        
+        .contact-form-text:focus {
+            box-shadow: 0 0 10px 4px #34495e;
+        }
+        
+        .contact-form-btn {
+            float: center;
+            border: 0;
+            background: #34495e;
+            color: #fff;
+            padding: 12px 100px;
+            border-radius: 20px;
+        }
+        
+        .contact-form-btn:hover {
+            background: #c9c8b2;
+        }
