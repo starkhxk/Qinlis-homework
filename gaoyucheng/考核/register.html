@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>橘子宝-注册</title>
+<link rel="stylesheet" type="text/css" href="index.css" /> 
+<link rel="stylesheet" type="text/css" href="register.css" />
+<script type="text/javascript" src="register.js"></script>
+</head>
+
+<body>
+	<div class="title">
+		<span>橘</span>
+		<div>
+			<span class="title_zhcn">橘子宝</span>
+			<span class="title_eng">OrangePay</span>
+		</div>
+	</div>
+	<div class="back">
+		<button onclick="javascript:window.history.back();">&lt;</button>
+	</div>
+	
+	
+	<div class="in">
+		<form method="post" id="myform">
+		<input class="number" type="tel" placeholder="请输入学号" onBlur="Is_StudentId()">
+		<br><span class="error"></span><br>
+		<input class="number" placeholder="请输入身份证号" onBlur="Is_IDnumber()">
+		<br><span class="error"></span><br>
+		<input class="number" placeholder="请输入姓名" onBlur="Is_empty()">
+		<br><span class="error"></span><br>
+		<button id="submi" input type="button" onClick="mysubmit()">提交</button>	
+		</form>
+	</div>	
+</body>
+</html>
